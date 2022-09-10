@@ -1,1 +1,10 @@
+<h1>{{ title }}</h1>
+
 <button [disabled]="clicked" (click)="handleClick()">Click Me!</button>
+
+<div *ngFor="let person of persons">
+    <h3>{{ person.name }}</h3>
+    <p>Age: {{person.age }}</p>
+    <p>Star Sign: {{person.starSign }}</p>
+    <br>
+</div>

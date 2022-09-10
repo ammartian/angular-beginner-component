@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VERSION } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,20 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   clicked = false;
+  title = `Angular ${VERSION.full} is cool!`
+
+  persons = [
+    {
+      name: 'Ammar Hakimi',
+      age: 24,
+      starSign: 'Leo'
+    },
+    {
+      name: 'Arfah Diyanah',
+      age: 23,
+      starSign: 'Aquarius'
+    }
+  ]
 
   constructor() { }
 
