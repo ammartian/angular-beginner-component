@@ -8,32 +8,32 @@ import { of } from 'rxjs';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  persons;
   clicked = false;
   title = `Angular ${VERSION.full} is cool!`
-
-  persons = of([
-    {
-      name: 'Ammar Hakimi',
-      age: 24,
-      starSign: 'Leo',
-      img: 'assets/images/ammar.jpeg'
-    },
-    {
-      name: 'Arfah Diyanah',
-      age: 23,
-      starSign: 'Aquarius',
-      img: 'assets/images/arfah.png'
-    }
-  ])
 
   constructor() { }
 
   ngOnInit(): void {
+      this.persons = of([
+      {
+        name: 'Ammar Hakimi',
+        age: 24,
+        starSign: 'Leo',
+        img: 'assets/images/ammar.jpeg'
+      },
+      {
+        name: 'Arfah Diyanah',
+        age: 23,
+        starSign: 'Aquarius',
+        img: 'assets/images/arfah.png'
+      }
+    ])
   }
 
   handleClick() {
     this.clicked = true;
   }
+
 
 }
