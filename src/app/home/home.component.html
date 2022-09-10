@@ -2,7 +2,7 @@
 
 <button [disabled]="clicked" (click)="handleClick()">Click Me!</button>
 
-<div *ngFor="let person of persons">
+<div *ngFor="let person of persons | async">
     <h3 [ngClass]="{
         'blue': person.name === 'Ammar Hakimi',
         'purple': person.name === 'Arfah Diyanah'

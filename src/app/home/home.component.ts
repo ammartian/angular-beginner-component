@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VERSION } from '@angular/core';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ export class HomeComponent implements OnInit {
   clicked = false;
   title = `Angular ${VERSION.full} is cool!`
 
-  persons = [
+  persons = of([
     {
       name: 'Ammar Hakimi',
       age: 24,
@@ -24,7 +25,7 @@ export class HomeComponent implements OnInit {
       starSign: 'Aquarius',
       img: 'assets/images/arfah.png'
     }
-  ]
+  ])
 
   constructor() { }
 
