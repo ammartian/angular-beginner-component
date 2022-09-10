@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FontSizeUpDirective } from './font-size-up.directive';
 import { MagnifierDirective } from './magnifier.directive';
+import { PersonComponent } from './person/person.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FontSizeUpDirective,
-    MagnifierDirective
+    MagnifierDirective,
+    PersonComponent,
   ],
   imports: [
     BrowserModule,
