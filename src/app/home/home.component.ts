@@ -15,12 +15,14 @@ export class HomeComponent implements OnInit {
     {
       name: 'Ammar Hakimi',
       age: 24,
-      starSign: 'Leo'
+      starSign: 'Leo',
+      img: 'assets/images/ammar.jpeg'
     },
     {
       name: 'Arfah Diyanah',
       age: 23,
-      starSign: 'Aquarius'
+      starSign: 'Aquarius',
+      img: 'assets/images/arfah.png'
     }
   ]
 

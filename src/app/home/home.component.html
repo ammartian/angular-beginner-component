@@ -9,6 +9,8 @@
     }">
         {{ person.name }}
     </h3>
+    <img [src]="person.img" appMagnifier>
+    <figcaption>Click picture to change size!</figcaption>
     <p>Age: {{person.age }}</p>
     <p>Star Sign: {{person.starSign }}</p>
     <br>
