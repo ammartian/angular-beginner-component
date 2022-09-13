@@ -4,12 +4,12 @@ import { of } from 'rxjs';
 @Component({
   selector: 'app-person',
   templateUrl: './person.component.html',
-  styleUrls: ['./person.component.scss']
+  styleUrls: ['./person.component.scss'],
 })
 export class PersonComponent implements OnInit {
   persons;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     this.persons = of([
@@ -17,15 +17,14 @@ export class PersonComponent implements OnInit {
         name: 'Ammar Hakimi',
         age: 24,
         starSign: 'Leo',
-        img: 'assets/images/ammar.jpeg'
+        img: 'assets/images/ammar.jpeg',
       },
       {
         name: 'Arfah Diyanah',
         age: 23,
         starSign: 'Aquarius',
-        img: 'assets/images/arfah.png'
-      }
-    ])
+        img: 'assets/images/arfah.png',
+      },
+    ]);
   }
-
 }

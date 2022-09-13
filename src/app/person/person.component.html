@@ -1,12 +1,14 @@
 <div *ngFor="let person of persons | async">
-    <h3 [ngClass]="{
-        'blue': person.name === 'Ammar Hakimi',
-        'purple': person.name === 'Arfah Diyanah'
-    }">
-        {{ person.name }}
-    </h3>
-    <img [src]="person.img" appMagnifier>
-    <figcaption>Click picture to change size!</figcaption>
-    <p>Age: {{person.age }}</p>
-    <p>Star Sign: {{person.starSign }}</p>
+  <h3
+    [ngClass]="{
+      blue: person.name === 'Ammar Hakimi',
+      purple: person.name === 'Arfah Diyanah'
+    }"
+  >
+    {{ person.name }}
+  </h3>
+  <img [src]="person.img" appMagnifier />
+  <figcaption>Click picture to change size!</figcaption>
+  <p>Age: {{ person.age }}</p>
+  <p>Star Sign: {{ person.starSign }}</p>
 </div>
